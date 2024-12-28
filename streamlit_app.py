@@ -1,4 +1,4 @@
-import openai # type: ignore
+import openai
 import streamlit as st
 import logging
 from PIL import Image, ImageEnhance
@@ -6,7 +6,7 @@ import time
 import json
 import requests
 import base64
-from openai import OpenAI, OpenAIError # type: ignore
+from openai import OpenAI, OpenAIError
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
