@@ -7,8 +7,8 @@ import pandas as pd
 import streamlit as st
 
 # Show app title and description.
-st.set_page_config(page_title="Support tickets", page_icon="🎫")
-st.title("🎫 Support tickets")
+st.set_page_config(page_title="Soporte de tickets", page_icon="🎫")
+st.title("🎫 Soporte de tickets")
 st.write(
     """
     This app shows how you can build an internal tool in Streamlit. Here, we are 
@@ -66,13 +66,13 @@ if "df" not in st.session_state:
 
 
 # Show a section to add a new ticket.
-st.header("Add a ticket")
+st.header("Adicionar ticket")
 
 # We're adding tickets via an `st.form` and some input widgets. If widgets are used
 # in a form, the app will only rerun once the submit button is pressed.
 with st.form("add_ticket_form"):
-    issue = st.text_area("Describe the issue")
-    priority = st.selectbox("Priority", ["High", "Medium", "Low"])
+    issue = st.text_area("Describa el problema")
+    priority = st.selectbox("Prioridad", ["Alta", "Mediana", "Baja"])
     submitted = st.form_submit_button("Submit")
 
 if submitted:
